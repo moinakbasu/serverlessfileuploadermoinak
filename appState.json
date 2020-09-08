@@ -1,0 +1,125 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "3406c8d8-3721-45cd-9132-ffbd0eec952d": {
+        "id": "3406c8d8-3721-45cd-9132-ffbd0eec952d",
+        "parent": null,
+        "name": "ServerlessFileUploaderMoinak.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "ServerlessFileUploaderMoinak.js",
+        "cursor": {
+          "lineNumber": 21,
+          "column": 5
+        },
+        "config": {
+          "runtime": "nodejs10.x",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": [],
+          "name": "ServerlessFileUploaderMoinak"
+        },
+        "triggers": [
+          {
+            "resourceName": "httpApigusEast1FileUploaderAPI",
+            "config": {
+              "defaultRoute": false,
+              "method": "PUT",
+              "route": "/upload"
+            }
+          }
+        ],
+        "testCases": {
+          "f0df59fd-46db-4359-b660-e3aa3b079885": {
+            "id": "f0df59fd-46db-4359-b660-e3aa3b079885",
+            "functionId": "3406c8d8-3721-45cd-9132-ffbd0eec952d",
+            "name": "My First Test Case",
+            "event": "{\n    \"key1\": \"value1\",\n    \"key2\": \"value2\",\n    \"key3\": \"value3\"\n}"
+          }
+        }
+      }
+    },
+    "openFiles": [
+      "3406c8d8-3721-45cd-9132-ffbd0eec952d"
+    ],
+    "currentFileId": "3406c8d8-3721-45cd-9132-ffbd0eec952d",
+    "resources": {
+      "httpApigusEast1FileUploaderAPI": {
+        "name": "httpApigusEast1FileUploaderAPI",
+        "type": "API_GATEWAY",
+        "config": {
+          "selectedRegion": "us-east-1",
+          "apiType": 2,
+          "mode": 0,
+          "apiName": "FileUploaderAPI",
+          "stageName": "test"
+        }
+      },
+      "s3fileUploadBucketMoinak": {
+        "name": "s3fileUploadBucketMoinak",
+        "type": "S3",
+        "config": {
+          "mode": 0,
+          "bucket": {
+            "region": "us-east-1",
+            "name": "file-upload-bucket-moinak"
+          }
+        }
+      }
+    },
+    "customTemplate": {
+      "syntax": "JSON",
+      "overrideDefault": false,
+      "dialect": null,
+      "definitions": null
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {
+        "mime-types": {
+          "name": "mime-types",
+          "version": "2.1.27",
+          "dev": false,
+          "language": "nodejs"
+        },
+        "aws-sdk": {
+          "name": "aws-sdk",
+          "language": "nodejs",
+          "version": "2.644.0",
+          "dev": true,
+          "notRemovable": false
+        }
+      }
+    }
+  },
+  "PROJECT_META": {
+    "sigmaVersion": "1.4.1.5",
+    "projectName": "ServerlessFileUploaderMoinak",
+    "projectDescription": "A file uploader using AWS technologies",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east-1",
+    "platform": "AWS",
+    "language": "nodejs",
+    "platformRegions": {},
+    "lastSave": 1599558664642
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "serverlessfileuploadermoinak",
+      "url": "https://github.com/moinakbasu/serverlessfileuploadermoinak"
+    }
+  }
+}
